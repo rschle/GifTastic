@@ -50,7 +50,7 @@ function displayShowInfo(){
         var showImage = $("<img>");
         showImage.attr("src", response.data[i].images.fixed_height.url);
         showImage.attr("data-animate", response.data[i].images.fixed_height.url);
-        showImage.attr("data-still", response.data[i].images.fixed_height.url);
+        showImage.attr("data-still", response.data[i].images.fixed_height_still.url);
         showImage.addClass("gif")
         showImage.attr("data-state", "still")
         
@@ -69,7 +69,7 @@ function displayShowInfo(){
         $("#gifs-appear-here").prepend(allDiv);
 
 
-        //making image on-click 
+       
 
     
        
@@ -82,14 +82,16 @@ function displayShowInfo(){
 
     $("#gifs-appear-here").on("click", ".gif", function(){
         var state = $(this).attr("data-state");
-    //     var animate = $(this).attr("data-animate");
-    //     var still = $(this).attr("data-still")
+        var animate = $(this).attr("data-animate");
+        var still = $(this).attr("data-still")
+        console.log(still);
     //     console.log(state);
+    console.log(state);
     //setting conditional statements so we know when the gif is paused/animated etc.
         if(state === "animate"){
             $(this).attr("src", $(this).attr("data-still"));
             $(this).attr("data-state", "still");
-            console.log(state);
+            
         }else if (state === "still") {
             $(this).attr("src", $(this).attr("data-animate"));
             $(this).attr("data-state", "animate");
