@@ -1,6 +1,67 @@
+body{
+    background: url(https://i.pinimg.com/originals/10/5b/18/105b18b8db617d4c02aa417cadbdae57.jpg)
+}
+
 #gifs-appear-here{
     float: left;
 }
 showImage{
     display: inline-block;
+}
+
+#add-show{
+    position: relative;
+    left: 700px;
+    width: 150px;
+    height: 40px;
+    border-radius: 0%;
+    font-size: 20px;
+    font-family: 'Staatliches', cursive;
+    color:#df0c13;
+    background: black;
+}
+
+.show-btn{
+    font-family: 'Staatliches', cursive;
+    color: white;
+    background: black;
+}
+
+.show-btn:hover{
+    background: #df0c13;
+}
+
+p{
+    position: relative;
+    left: 650px;
+    font-family: 'Staatliches', cursive;
+    color: white;
+    font-size: 25px;
+}
+
+#netflixInput{
+    position: relative;
+    left: 700px;
+}
+
+input{
+    position: relative;
+    left: 700px;
+    width: 150px;
+    height: 25px;
+}
+
+#add-show:hover{
+    background: #df0c13;
+    color: black;
+}
+
+.ratingDiv{
+    color: white;
+    margin-top: 20px;
+}
+
+.allDiv{
+    border: 1px solid;
+    border-color: white;
 }
